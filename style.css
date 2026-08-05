@@ -371,7 +371,7 @@ color:#555;
 .gallery-slider{
 position:relative;
 max-width:1000px;
-height:560px;
+height:500px;
 margin:0 auto;
 overflow:hidden;
 border-radius:16px;
@@ -817,7 +817,7 @@ font-size:14px;
 ===================================== */
 
 .gallery-slider{
-height:420px;
+height:380px;
 border-radius:12px;
 }
 
@@ -894,7 +894,7 @@ font-size:16px;
 /* SMALL MOBILE GALLERY */
 
 .gallery-slider{
-height:350px;
+height:320px;
 }
 
 
