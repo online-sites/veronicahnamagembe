@@ -1,36 +1,32 @@
 /* =====================================
-GLOBAL SETTINGS
+   GLOBAL SETTINGS
 ===================================== */
 
 *{
-
 margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:"Segoe UI",Arial,sans-serif;
-
 }
+
 
 html{
-
 scroll-behavior:smooth;
-
 }
 
-body{
 
+body{
 background:#f7f9fc;
 color:#333;
 padding-top:55px;
-
 }
 
+
 /* =====================================
-PROFESSIONAL MOVING BANNER
+   PROFESSIONAL MOVING BANNER
 ===================================== */
 
 .support-banner{
-
 width:100%;
 height:55px;
 overflow:hidden;
@@ -43,11 +39,10 @@ background:rgba(255,255,255,.95);
 backdrop-filter:blur(6px);
 border-bottom:1px solid #e5e5e5;
 z-index:9999;
-
 }
 
-.support-banner p{
 
+.support-banner p{
 position:absolute;
 white-space:nowrap;
 margin:0;
@@ -60,37 +55,32 @@ border-radius:30px;
 line-height:25px;
 animation:scrollText 20s linear infinite;
 box-shadow:0 3px 10px rgba(0,0,0,.15);
-
 }
+
 
 .support-banner:hover p{
-
 animation-play-state:paused;
-
 }
+
 
 @keyframes scrollText{
 
 from{
-
 transform:translateX(100%);
-
 }
 
 to{
-
 transform:translateX(-100%);
-
 }
 
 }
+
 
 /* =====================================
-NAVIGATION
+   NAVIGATION
 ===================================== */
 
 nav{
-
 background:#008273;
 padding:18px 8%;
 display:flex;
@@ -100,47 +90,42 @@ position:sticky;
 top:55px;
 z-index:999;
 box-shadow:0 2px 10px rgba(0,0,0,.15);
-
 }
 
-.logo a{
 
+.logo a{
 color:#fff;
 font-size:24px;
 font-weight:bold;
 text-decoration:none;
-
 }
 
-nav ul{
 
+nav ul{
 display:flex;
 gap:25px;
 list-style:none;
-
 }
 
-nav a{
 
+nav a{
 color:#fff;
 text-decoration:none;
 transition:.3s;
 font-weight:500;
-
 }
+
 
 nav a:hover{
-
 color:#7ec8ff;
-
 }
 
+
 /* =====================================
-HERO SECTION
+   HERO SECTION
 ===================================== */
 
 .hero{
-
 background:#fff;
 max-width:1200px;
 margin:auto;
@@ -148,65 +133,58 @@ padding:80px 40px;
 display:flex;
 align-items:center;
 gap:60px;
-
 }
+
 
 .hero-content{
-
 width:65%;
 text-align:left;
-
 }
 
-.profile{
 
+.profile{
 width:35%;
 display:flex;
 justify-content:center;
 align-items:center;
 flex-direction:column;
-
 }
 
-.hero h1{
 
+.hero h1{
 font-size:46px;
 color:#008273;
 margin-bottom:10px;
-
 }
 
-.hero h2{
 
+.hero h2{
 font-size:24px;
 color:#0070C0;
 margin-bottom:18px;
-
 }
 
-.hero p{
 
+.hero p{
 font-size:16px;
 line-height:1.7;
 max-width:650px;
 margin-bottom:30px;
-
 }
 
+
 /* =====================================
-HERO BUTTONS
+   HERO BUTTONS
 ===================================== */
 
 .hero-buttons{
-
 display:flex;
 flex-wrap:wrap;
 gap:12px;
-
 }
 
-.hero-buttons a{
 
+.hero-buttons a{
 display:inline-flex;
 align-items:center;
 justify-content:center;
@@ -217,246 +195,226 @@ border-radius:25px;
 text-decoration:none;
 font-weight:600;
 transition:.3s;
-
 }
+
 
 .hero-buttons a:hover{
-
 background:#0070C0;
 transform:translateY(-3px);
-
 }
 
+
 /* =====================================
-PROFILE IMAGE
+   PROFILE IMAGE
 ===================================== */
 
 .profile img{
-
 width:260px;
 height:320px;
 border-radius:50%;
 object-fit:cover;
 box-shadow:0 8px 20px rgba(0,0,0,.2);
-
 }
 
+
 /* =====================================
-GENERAL SECTIONS
+   GENERAL SECTIONS
 ===================================== */
 
 section{
-
 padding:60px 8%;
-
 }
 
-section h2{
 
+section h2{
 text-align:center;
 color:#008273;
 margin-bottom:30px;
 font-size:32px;
-
 }
 
+
 /* =====================================
-CARDS
+   CARDS
 ===================================== */
 
 .card{
-
 background:#fff;
 padding:25px;
 margin-bottom:20px;
 border-radius:12px;
 box-shadow:0 5px 20px rgba(0,0,0,.08);
 transition:.3s;
-
 }
+
 
 .card:hover{
-
 transform:translateY(-5px);
 box-shadow:0 10px 25px rgba(0,0,0,.15);
-
 }
+
 
 .card h3{
-
 color:#0070C0;
 margin-bottom:12px;
-
 }
+
 
 .card p{
-
 line-height:1.7;
 color:#555;
-
 }
 
-.card h4{
 
+.card h4{
 color:#008273;
 font-size:16px;
 margin-top:20px;
 margin-bottom:10px;
-
 }
 
+
 /* =====================================
-SKILLS GRID
+   SKILLS GRID
 ===================================== */
 
 .skills-grid{
-
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
-
 }
 
-.skill{
 
+.skill{
 background:#008273;
 color:#fff;
 padding:25px;
 border-radius:12px;
 text-align:center;
 transition:.3s;
-
 }
+
 
 .skill:hover{
-
 background:#0070C0;
 transform:translateY(-5px);
-
 }
+
 
 .skill h3{
-
 margin-bottom:15px;
 font-size:20px;
-
 }
+
 
 .skill p{
-
 line-height:1.8;
-
 }
 
+
 /* =====================================
-EXPERTISE & CREDENTIALS LISTS
+   EXPERTISE & CREDENTIALS LISTS
 ===================================== */
 
 #expertise > h2,
 #credentials > h2{
-
 text-align:center;
-
 }
+
 
 #expertise .skill,
 #credentials .skill{
-
 text-align:left;
-
 }
+
 
 #expertise .skill h3,
 #credentials .skill h3{
-
 text-align:left;
-
 }
+
 
 #expertise .skill ul,
 #credentials .skill ul{
-
 margin:0;
 padding-left:20px;
 text-align:left;
-
 }
+
 
 #expertise .skill li,
 #credentials .skill li{
-
 margin-bottom:8px;
 line-height:1.6;
 text-align:left;
-
 }
 
+
 /* =====================================
-GALLERY
+   GALLERY
 ===================================== */
 
 #gallery{
-
 text-align:center;
-
 }
 
-.gallery-intro{
 
+.gallery-intro{
 max-width:750px;
 margin:0 auto 30px;
 text-align:center;
 line-height:1.7;
 color:#555;
-
 }
 
-.gallery-slider{
 
+.gallery-slider{
 position:relative;
-max-width:900px;
-height:520px;
+max-width:1000px;
+height:560px;
 margin:0 auto;
 overflow:hidden;
 border-radius:16px;
-background:#fff;
+background:#f1f3f5;
 box-shadow:0 8px 25px rgba(0,0,0,.12);
-
 }
 
-.gallery-slide{
 
+.gallery-slide{
 position:absolute;
-top:0;
-left:0;
+inset:0;
 width:100%;
 height:100%;
 opacity:0;
 visibility:hidden;
 transition:opacity .8s ease;
-
+display:flex;
+align-items:center;
+justify-content:center;
 }
+
 
 .gallery-slide.active{
-
 opacity:1;
 visibility:visible;
-
 }
+
 
 .gallery-slide img{
-
-width:100%;
-height:100%;
+max-width:100%;
+max-height:100%;
+width:auto;
+height:auto;
 object-fit:contain;
 display:block;
-
 }
 
-/* GALLERY CAPTION */
+
+/* =====================================
+   GALLERY CAPTION
+===================================== */
 
 .gallery-caption{
-
 position:absolute;
 left:0;
 bottom:0;
@@ -467,14 +425,15 @@ color:#fff;
 font-size:16px;
 font-weight:600;
 text-align:center;
-
 }
 
-/* GALLERY ARROWS */
+
+/* =====================================
+   GALLERY ARROWS
+===================================== */
 
 .gallery-prev,
 .gallery-next{
-
 position:absolute;
 top:50%;
 transform:translateY(-50%);
@@ -491,43 +450,40 @@ align-items:center;
 justify-content:center;
 transition:.3s;
 z-index:5;
-
 }
+
 
 .gallery-prev{
-
 left:20px;
-
 }
+
 
 .gallery-next{
-
 right:20px;
-
 }
+
 
 .gallery-prev:hover,
 .gallery-next:hover{
-
 background:#0070C0;
 transform:translateY(-50%) scale(1.08);
-
 }
 
-/* GALLERY DOTS */
+
+/* =====================================
+   GALLERY DOTS
+===================================== */
 
 .gallery-dots{
-
 display:flex;
 justify-content:center;
 align-items:center;
 gap:9px;
 margin-top:18px;
-
 }
 
-.gallery-dot{
 
+.gallery-dot{
 width:10px;
 height:10px;
 background:#ccc;
@@ -535,66 +491,59 @@ border-radius:50%;
 display:inline-block;
 cursor:pointer;
 transition:.3s;
-
 }
+
 
 .gallery-dot.active{
-
 background:#008273;
 transform:scale(1.25);
-
 }
+
 
 .gallery-dot:hover{
-
 background:#0070C0;
-
 }
 
+
 /* =====================================
-CONTACT
+   CONTACT SECTION
 ===================================== */
 
 #contact{
-
 text-align:center;
-
 }
 
-#contact a{
 
+#contact a{
 color:#0070C0;
 text-decoration:none;
 font-weight:600;
-
 }
+
 
 #contact a:hover{
-
 text-decoration:underline;
-
 }
 
+
 /* =====================================
-FOOTER
+   FOOTER
 ===================================== */
 
 footer{
-
 background:#008273;
 color:#fff;
 text-align:center;
 padding:25px;
 font-size:15px;
-
 }
 
+
 /* =====================================
-FLOATING HOME BUTTON
+   FLOATING HOME BUTTON
 ===================================== */
 
 .home-button{
-
 position:fixed;
 right:25px;
 bottom:25px;
@@ -607,22 +556,20 @@ font-weight:600;
 box-shadow:0 5px 15px rgba(0,0,0,.25);
 z-index:999;
 transition:.3s;
-
 }
+
 
 .home-button:hover{
-
 background:#0070C0;
 transform:translateY(-3px);
-
 }
 
+
 /* =====================================
-BACKUP HOME PAGE
+   BACKUP HOME PAGE
 ===================================== */
 
 .home-page{
-
 height:100vh;
 display:flex;
 flex-direction:column;
@@ -631,38 +578,34 @@ align-items:center;
 text-align:center;
 background:#f7f9fc;
 padding:30px;
-
 }
 
-.home-page img{
 
+.home-page img{
 width:180px;
 height:180px;
 border-radius:50%;
 object-fit:cover;
 margin-bottom:25px;
 box-shadow:0 8px 20px rgba(0,0,0,.2);
-
 }
 
-.home-page h1{
 
+.home-page h1{
 color:#008273;
 font-size:36px;
 margin-bottom:20px;
-
 }
 
-.home-page p{
 
+.home-page p{
 font-size:18px;
 color:#555;
 margin-bottom:30px;
-
 }
 
-.home-page a{
 
+.home-page a{
 background:#008273;
 color:#fff;
 padding:14px 30px;
@@ -670,390 +613,344 @@ border-radius:30px;
 text-decoration:none;
 font-weight:bold;
 transition:.3s;
-
 }
+
 
 .home-page a:hover{
-
 background:#0070C0;
-
 }
 
+
 /* =====================================
-ENGAGEMENT PHOTO
+   EXPERIENCE ENGAGEMENT PHOTO
 ===================================== */
 
 .engagement-photo{
-
 text-align:center;
 margin:25px 0;
-
 }
 
-.engagement-photo img{
 
+.engagement-photo img{
 width:55%;
 max-width:720px;
 height:auto;
 border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,.15);
-
 }
 
-.image-caption{
 
+.image-caption{
 text-align:center;
 font-size:14px;
 font-weight:600;
 color:#444;
 margin-top:10px;
 line-height:1.5;
-
 }
 
-.card p{
-
-line-height:1.7;
-max-width:900px;
-
-}
 
 .engagement-title{
-
 margin-top:25px;
-
 }
 
+
+.card p{
+line-height:1.7;
+max-width:900px;
+}
+
+
 /* =====================================
-ANCHOR OFFSET
+   ANCHOR OFFSET
 ===================================== */
 
 section[id]{
-
 scroll-margin-top:140px;
-
 }
 
+
 /* =====================================
-MOBILE RESPONSIVE DESIGN
+   MOBILE RESPONSIVE DESIGN
 ===================================== */
 
 @media(max-width:1024px){
 
 nav{
-
 padding:18px 5%;
-
 }
+
 
 .hero{
-
 padding:60px 5%;
 gap:35px;
-
 }
+
 
 .hero h1{
-
 font-size:40px;
-
 }
 
 }
+
 
 /* =====================================
-TABLET / MOBILE
+   TABLET / MOBILE
 ===================================== */
 
 @media(max-width:768px){
 
 body{
-
 padding-top:55px;
-
 }
 
-nav{
 
+nav{
 flex-direction:column;
 gap:15px;
 text-align:center;
-
 }
 
-nav ul{
 
+nav ul{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
 gap:15px;
-
 }
+
 
 .logo a{
-
 font-size:22px;
-
 }
+
 
 /* MOBILE HERO */
 
 .hero{
-
 flex-direction:column-reverse;
 text-align:left;
 padding:50px 20px;
-
 }
+
 
 .hero-content,
 .profile{
-
 width:100%;
 text-align:left;
-
 }
+
 
 .hero h1{
-
 font-size:36px;
 text-align:left;
-
 }
+
 
 .hero h2{
-
 font-size:21px;
 text-align:left;
-
 }
+
 
 .hero p{
-
 text-align:left;
-
 }
+
 
 .hero-buttons{
-
 justify-content:center;
-
 }
+
 
 .hero-buttons a{
-
 width:100%;
 max-width:280px;
-
 }
+
 
 .profile img{
-
 width:220px;
 height:220px;
-
 }
+
 
 /* SECTIONS */
 
 section{
-
 padding:45px 20px;
-
 }
+
 
 section h2{
-
 font-size:28px;
-
 }
+
 
 /* SKILLS */
 
 .skills-grid{
-
 grid-template-columns:1fr;
-
 }
+
 
 /* BANNER */
 
 .support-banner p{
-
 font-size:14px;
 padding:8px 18px;
-
 }
+
 
 /* HOME BUTTON */
 
 .home-button{
-
 right:15px;
 bottom:15px;
 padding:12px 18px;
 font-size:14px;
-
 }
 
-/* GALLERY */
+
+/* =====================================
+   MOBILE GALLERY
+===================================== */
 
 .gallery-slider{
-
 height:420px;
 border-radius:12px;
-
 }
+
 
 .gallery-prev,
 .gallery-next{
-
 width:40px;
 height:40px;
 font-size:20px;
-
 }
+
 
 .gallery-prev{
-
 left:12px;
-
 }
+
 
 .gallery-next{
-
 right:12px;
-
 }
+
 
 .gallery-caption{
-
 font-size:14px;
 padding:14px 15px;
-
 }
 
 }
+
 
 /* =====================================
-SMALL MOBILE DEVICES
+   SMALL MOBILE DEVICES
 ===================================== */
 
 @media(max-width:480px){
 
 .hero h1{
-
 font-size:30px;
-
 }
+
 
 .hero h2{
-
 font-size:18px;
-
 }
+
 
 .hero p{
-
 font-size:15px;
-
 }
+
 
 nav ul{
-
 flex-direction:column;
 gap:10px;
-
 }
+
 
 .profile img{
-
 width:180px;
 height:180px;
-
 }
+
 
 .home-page h1{
-
 font-size:28px;
-
 }
+
 
 .home-page p{
-
 font-size:16px;
-
 }
+
 
 /* SMALL MOBILE GALLERY */
 
 .gallery-slider{
-
 height:350px;
-
 }
+
 
 .gallery-prev,
 .gallery-next{
-
 width:36px;
 height:36px;
 font-size:18px;
-
 }
+
 
 .gallery-prev{
-
 left:10px;
-
 }
+
 
 .gallery-next{
-
 right:10px;
-
 }
+
 
 .gallery-caption{
-
 font-size:13px;
 padding:12px 10px;
-
 }
 
 }
+
 
 /* =====================================
-FINAL DESKTOP HERO ALIGNMENT
+   FINAL DESKTOP HERO ALIGNMENT
 ===================================== */
 
 @media(min-width:769px){
 
 .hero-content{
-
 margin-left:0;
 padding-left:0;
 text-align:left;
-
 }
+
 
 .hero-content h1,
 .hero-content h2,
 .hero-content p{
-
 margin-left:0;
 padding-left:0;
-
 }
 
 }
+
 
 .hero-content h1,
 .hero-content h2,
 .hero-content p{
-
 text-align:left !important;
 margin-left:0 !important;
 padding-left:0 !important;
-
 }
