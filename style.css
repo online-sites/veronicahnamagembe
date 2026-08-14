@@ -125,12 +125,12 @@ nav a:hover{
 }
 
 .hero-content{
-    width:65%;
+    width:70%;
     text-align:left;
 }
 
 .profile{
-    width:35%;
+    width:30%;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -140,14 +140,16 @@ nav a:hover{
 
 /* =====================================
    HERO NAME
+   KEEP NAME ON ONE LINE
 ===================================== */
 
 .hero h1{
-    font-size:46px;
+    font-size:44px;
     color:#008273;
     line-height:1.1;
     margin:0 0 5px 0 !important;
     padding:0 !important;
+    white-space:nowrap;
 }
 
 
@@ -166,7 +168,7 @@ nav a:hover{
 
 /* =====================================
    HERO CREDENTIALS
-   GOLD + VERTICAL ANIMATION
+   BANNER GOLD + VERTICAL ANIMATION
 ===================================== */
 
 .hero-content .hero-credentials{
@@ -211,22 +213,18 @@ nav a:hover{
    CREDENTIAL TIMING
 ===================================== */
 
-/* FUIB, Hon */
 .hero-content .hero-credentials div:nth-child(1){
     animation-delay:0s;
 }
 
-/* MBA */
 .hero-content .hero-credentials div:nth-child(2){
     animation-delay:2s;
 }
 
-/* MSFA */
 .hero-content .hero-credentials div:nth-child(3){
     animation-delay:4s;
 }
 
-/* BBA */
 .hero-content .hero-credentials div:nth-child(4){
     animation-delay:6s;
 }
@@ -332,7 +330,7 @@ section{
 section h2{
     text-align:center;
     color:#008273;
-    font-size:32px;
+    font-size:30px;
     line-height:1.2;
     margin:0 0 12px 0 !important;
     padding:0 !important;
@@ -514,6 +512,20 @@ section[id]{
 
 #achievements > h2{
     margin-bottom:12px !important;
+}
+
+
+/* =====================================
+   PROFESSIONAL SNAPSHOT
+===================================== */
+
+#snapshot{
+    padding-top:22px !important;
+    padding-bottom:22px !important;
+}
+
+#snapshot .skill{
+    text-align:center;
 }
 
 
@@ -815,6 +827,37 @@ footer p{
 
 
 /* =====================================
+   DESKTOP HERO ALIGNMENT
+===================================== */
+
+@media(min-width:769px){
+
+    .hero-content{
+        width:70%;
+        margin-left:0;
+        padding-left:0;
+        text-align:left;
+    }
+
+    .profile{
+        width:30%;
+    }
+
+    .hero-content h1,
+    .hero-content h2,
+    .hero-content p{
+        margin-left:0;
+        padding-left:0;
+        text-align:left;
+    }
+
+    .hero h1{
+        white-space:nowrap;
+    }
+}
+
+
+/* =====================================
    TABLET
 ===================================== */
 
@@ -887,9 +930,15 @@ footer p{
         text-align:left;
     }
 
+    /*
+       Keep the full name on one line.
+       clamp() makes it smaller on narrow screens.
+    */
+
     .hero h1{
-        font-size:36px;
+        font-size:clamp(18px,7vw,32px);
         text-align:left;
+        white-space:nowrap;
     }
 
     .hero h2{
@@ -953,7 +1002,7 @@ footer p{
     }
 
     section h2{
-        font-size:28px;
+        font-size:27px;
         margin-bottom:10px !important;
     }
 
@@ -1041,7 +1090,7 @@ footer p{
 
 
 /* =====================================
-   SMALL MOBILE DEVICES
+   SMALL MOBILE
 ===================================== */
 
 @media(max-width:480px){
@@ -1051,8 +1100,14 @@ footer p{
         gap:20px;
     }
 
+    /*
+       Force name to remain one line
+       even on very small screens.
+    */
+
     .hero h1{
-        font-size:30px;
+        font-size:clamp(17px,7vw,30px);
+        white-space:nowrap;
     }
 
     .hero h2{
