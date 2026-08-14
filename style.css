@@ -121,16 +121,18 @@ nav a:hover{
     padding:55px 40px;
     display:flex;
     align-items:center;
-    gap:50px;
+    gap:45px;
 }
 
 .hero-content{
-    width:70%;
+    width:75%;
+    min-width:0;
     text-align:left;
 }
 
 .profile{
-    width:30%;
+    width:25%;
+    flex-shrink:0;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -140,27 +142,42 @@ nav a:hover{
 
 /* =====================================
    HERO NAME
-   KEEP NAME ON ONE LINE
+   FORCE ONE SINGLE LINE
 ===================================== */
 
 .hero h1{
+    display:block !important;
+    width:100% !important;
+    max-width:none !important;
+    white-space:nowrap !important;
+    word-break:normal !important;
+    overflow:visible !important;
+
     font-size:44px;
     color:#008273;
     line-height:1.1;
+
     margin:0 0 5px 0 !important;
     padding:0 !important;
-    white-space:nowrap;
+}
+
+/* If HTML contains a <br> inside the name,
+   hide it so the name cannot wrap */
+
+.hero h1 br{
+    display:none !important;
 }
 
 
 /* =====================================
-   HERO POSITION
+   DIRECTOR / POSITION
 ===================================== */
 
 .hero h2{
     font-size:24px;
     color:#0070C0;
     line-height:1.15;
+
     margin:0 0 1px 0 !important;
     padding:0 !important;
 }
@@ -168,7 +185,7 @@ nav a:hover{
 
 /* =====================================
    HERO CREDENTIALS
-   BANNER GOLD + VERTICAL ANIMATION
+   BANNER GOLD
 ===================================== */
 
 .hero-content .hero-credentials{
@@ -205,7 +222,7 @@ nav a:hover{
     transform:translateY(100%);
     opacity:0;
 
-    animation:verticalCredentialSlide 10s infinite;
+    animation:verticalCredentialSlide 8s infinite;
 }
 
 
@@ -271,6 +288,7 @@ nav a:hover{
     font-size:16px;
     line-height:1.5;
     max-width:650px;
+
     margin:0 0 12px 0 !important;
     padding:0 !important;
 }
@@ -291,12 +309,16 @@ nav a:hover{
     display:inline-flex;
     align-items:center;
     justify-content:center;
+
     padding:12px 25px;
+
     background:#008273;
     color:#fff;
+
     border-radius:25px;
     text-decoration:none;
     font-weight:600;
+
     transition:.3s;
 }
 
@@ -321,6 +343,7 @@ nav a:hover{
 
 /* =====================================
    GENERAL SECTIONS
+   REDUCED SPACING
 ===================================== */
 
 section{
@@ -332,6 +355,7 @@ section h2{
     color:#008273;
     font-size:30px;
     line-height:1.2;
+
     margin:0 0 12px 0 !important;
     padding:0 !important;
 }
@@ -353,13 +377,16 @@ section[id]{
 
 /* =====================================
    CARDS
+   REDUCED SPACING
 ===================================== */
 
 .card{
     background:#fff;
     padding:16px 20px !important;
     margin:0 0 8px 0 !important;
+
     border-radius:10px;
+
     box-shadow:0 3px 12px rgba(0,0,0,.07);
     transition:.3s;
 }
@@ -371,6 +398,7 @@ section[id]{
 
 .card h3{
     color:#0070C0;
+
     margin:0 0 5px 0 !important;
     padding:0 !important;
 }
@@ -378,6 +406,7 @@ section[id]{
 .card h4{
     color:#008273;
     font-size:16px;
+
     margin:8px 0 5px 0 !important;
     padding:0 !important;
 }
@@ -386,6 +415,7 @@ section[id]{
     line-height:1.5;
     color:#555;
     max-width:900px;
+
     margin:0 0 5px 0 !important;
     padding:0 !important;
 }
@@ -414,9 +444,12 @@ section[id]{
 .skill{
     background:#008273;
     color:#fff;
+
     padding:16px 20px !important;
+
     border-radius:10px;
-    text-align:center;
+    text-align:left;
+
     transition:.3s;
 }
 
@@ -551,9 +584,12 @@ section[id]{
     position:relative;
     max-width:1000px;
     height:500px;
+
     margin:0 auto;
+
     overflow:hidden;
     border-radius:16px;
+
     background:#f1f3f5;
     box-shadow:0 8px 25px rgba(0,0,0,.12);
 }
@@ -561,11 +597,15 @@ section[id]{
 .gallery-slide{
     position:absolute;
     inset:0;
+
     width:100%;
     height:100%;
+
     opacity:0;
     visibility:hidden;
+
     transition:opacity .8s ease;
+
     display:flex;
     align-items:center;
     justify-content:center;
@@ -579,8 +619,10 @@ section[id]{
 .gallery-slide img{
     max-width:100%;
     max-height:100%;
+
     width:auto;
     height:auto;
+
     object-fit:contain;
     display:block;
 }
@@ -594,10 +636,14 @@ section[id]{
     position:absolute;
     left:0;
     bottom:0;
+
     width:100%;
+
     padding:18px 20px;
+
     background:rgba(0,0,0,.65);
     color:#fff;
+
     font-size:16px;
     font-weight:600;
     text-align:center;
@@ -612,18 +658,25 @@ section[id]{
 .gallery-next{
     position:absolute;
     top:50%;
+
     transform:translateY(-50%);
+
     width:45px;
     height:45px;
+
     border:none;
     border-radius:50%;
+
     background:rgba(0,130,115,.85);
     color:#fff;
+
     font-size:24px;
     cursor:pointer;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
     transition:.3s;
     z-index:5;
 }
@@ -651,17 +704,23 @@ section[id]{
     display:flex;
     justify-content:center;
     align-items:center;
+
     gap:9px;
+
     margin-top:10px;
 }
 
 .gallery-dot{
     width:10px;
     height:10px;
+
     background:#ccc;
+
     border-radius:50%;
+
     display:inline-block;
     cursor:pointer;
+
     transition:.3s;
 }
 
@@ -681,6 +740,7 @@ section[id]{
 
 #contact{
     text-align:center;
+
     padding-top:22px !important;
     padding-bottom:22px !important;
 }
@@ -708,8 +768,11 @@ section[id]{
 footer{
     background:#008273;
     color:#fff;
+
     text-align:center;
+
     padding:20px;
+
     font-size:15px;
 }
 
@@ -725,15 +788,21 @@ footer p{
 
 .home-button{
     position:fixed;
+
     right:25px;
     bottom:25px;
+
     background:#008273;
     color:#fff;
+
     padding:14px 22px;
+
     border-radius:30px;
     text-decoration:none;
     font-weight:600;
+
     box-shadow:0 5px 15px rgba(0,0,0,.25);
+
     z-index:999;
     transition:.3s;
 }
@@ -750,11 +819,14 @@ footer p{
 
 .home-page{
     height:100vh;
+
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+
     text-align:center;
+
     background:#f7f9fc;
     padding:30px;
 }
@@ -762,9 +834,12 @@ footer p{
 .home-page img{
     width:180px;
     height:180px;
+
     border-radius:50%;
     object-fit:cover;
+
     margin-bottom:25px;
+
     box-shadow:0 8px 20px rgba(0,0,0,.2);
 }
 
@@ -783,10 +858,13 @@ footer p{
 .home-page a{
     background:#008273;
     color:#fff;
+
     padding:14px 30px;
+
     border-radius:30px;
     text-decoration:none;
     font-weight:bold;
+
     transition:.3s;
 }
 
@@ -808,16 +886,21 @@ footer p{
     width:55%;
     max-width:720px;
     height:auto;
+
     border-radius:10px;
+
     box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
 .image-caption{
     text-align:center;
+
     font-size:14px;
     font-weight:600;
     color:#444;
+
     margin-top:6px;
+
     line-height:1.4;
 }
 
@@ -827,33 +910,11 @@ footer p{
 
 
 /* =====================================
-   DESKTOP HERO ALIGNMENT
+   ANCHOR OFFSET
 ===================================== */
 
-@media(min-width:769px){
-
-    .hero-content{
-        width:70%;
-        margin-left:0;
-        padding-left:0;
-        text-align:left;
-    }
-
-    .profile{
-        width:30%;
-    }
-
-    .hero-content h1,
-    .hero-content h2,
-    .hero-content p{
-        margin-left:0;
-        padding-left:0;
-        text-align:left;
-    }
-
-    .hero h1{
-        white-space:nowrap;
-    }
+section[id]{
+    scroll-margin-top:115px;
 }
 
 
@@ -872,12 +933,17 @@ footer p{
         gap:35px;
     }
 
-    .hero h1{
-        font-size:40px;
+    .hero-content{
+        width:78%;
     }
 
-    .hero h2{
-        font-size:22px;
+    .profile{
+        width:22%;
+    }
+
+    .hero h1{
+        font-size:38px;
+        white-space:nowrap !important;
     }
 
     .profile img{
@@ -920,25 +986,42 @@ footer p{
     .hero{
         flex-direction:column-reverse;
         text-align:left;
+
         padding:40px 20px;
+
         gap:25px;
     }
 
-    .hero-content,
-    .profile{
+    .hero-content{
         width:100%;
+        min-width:0;
         text-align:left;
     }
 
-    /*
-       Keep the full name on one line.
-       clamp() makes it smaller on narrow screens.
-    */
+    .profile{
+        width:100%;
+    }
+
+
+    /* FORCE NAME ONE LINE */
 
     .hero h1{
-        font-size:clamp(18px,7vw,32px);
-        text-align:left;
-        white-space:nowrap;
+        display:block !important;
+
+        width:max-content !important;
+        max-width:none !important;
+
+        white-space:nowrap !important;
+        word-break:normal !important;
+
+        font-size:28px !important;
+        line-height:1.1 !important;
+
+        letter-spacing:-.5px;
+    }
+
+    .hero h1 br{
+        display:none !important;
     }
 
     .hero h2{
@@ -956,19 +1039,26 @@ footer p{
     .hero .hero-credentials{
         height:28px;
         overflow:hidden;
+
         color:#B98E2F !important;
+
         font-size:15px;
         line-height:28px;
+
         font-weight:700 !important;
         font-style:italic !important;
+
         margin:0 0 12px 0 !important;
+
         text-align:left;
     }
 
     .hero-content .hero-credentials div{
         height:28px;
         line-height:28px;
+
         color:#B98E2F !important;
+
         font-weight:700 !important;
         font-style:italic !important;
     }
@@ -1040,7 +1130,9 @@ footer p{
     .home-button{
         right:15px;
         bottom:15px;
+
         padding:12px 18px;
+
         font-size:14px;
     }
 
@@ -1072,10 +1164,6 @@ footer p{
         padding:14px 15px;
     }
 
-    .gallery-dots{
-        margin-top:10px;
-    }
-
 
     /* MOBILE ENGAGEMENT IMAGE */
 
@@ -1100,14 +1188,26 @@ footer p{
         gap:20px;
     }
 
-    /*
-       Force name to remain one line
-       even on very small screens.
-    */
+
+    /* FORCE NAME ONE LINE */
 
     .hero h1{
-        font-size:clamp(17px,7vw,30px);
-        white-space:nowrap;
+        display:block !important;
+
+        width:max-content !important;
+        max-width:none !important;
+
+        white-space:nowrap !important;
+        word-break:normal !important;
+
+        font-size:23px !important;
+        line-height:1.1 !important;
+
+        letter-spacing:-.7px;
+    }
+
+    .hero h1 br{
+        display:none !important;
     }
 
     .hero h2{
@@ -1123,17 +1223,22 @@ footer p{
 
     .hero .hero-credentials{
         height:26px;
+
         color:#B98E2F !important;
+
         font-size:14px;
         line-height:26px;
+
         font-weight:700 !important;
         font-style:italic !important;
+
         margin-bottom:10px !important;
     }
 
     .hero-content .hero-credentials div{
         height:26px;
         line-height:26px;
+
         color:#B98E2F !important;
     }
 
@@ -1195,7 +1300,7 @@ footer p{
 
 
 /* =====================================
-   FINAL HERO TEXT ALIGNMENT
+   FINAL HERO ALIGNMENT
 ===================================== */
 
 .hero-content h1,
@@ -1208,8 +1313,24 @@ footer p{
 
 
 /* =====================================
+   FINAL NAME OVERRIDE
+===================================== */
+
+.hero-content h1{
+    width:max-content !important;
+    max-width:none !important;
+    white-space:nowrap !important;
+    word-break:normal !important;
+    overflow:visible !important;
+}
+
+.hero-content h1 br{
+    display:none !important;
+}
+
+
+/* =====================================
    FINAL CREDENTIAL COLOR
-   FORCE BANNER GOLD
 ===================================== */
 
 .hero-content .hero-credentials,
